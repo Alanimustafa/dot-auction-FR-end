@@ -1,0 +1,33 @@
+.VehicleCardMainContainer {
+    color: white;
+    border: red solid 2px;
+    width: 30%;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+
+.VehicleHeaderCard {
+    border: green solid 2px;
+}
+
+.VehicleHeader{
+    color: rgb(255, 201, 51)
+}
+
+.VehicleImageContainer {
+    background-color: white;
+    width: 50%;
+    border: green solid 2px;
+    border-radius: 10px;;
+    padding: 1vh;
+    justify-self: center;
+}
+.CardVehicleImage {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.VehicleCardInformation {
+    border: orange solid 2px;
+}

@@ -1,8 +1,16 @@
 body {
     background-color: black;
+    margin:0px;
+}
+
+.PageMainContainer {
+    background-color: #333f3c;
+    width: 95vw;
+    justify-self: center;
 }
 
 .logoHeader {
     color: yellow;
     font-style: italic;
+    margin: 0px;
 }

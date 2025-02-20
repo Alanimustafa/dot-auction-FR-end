@@ -1,0 +1,4 @@
+.VehicleListMainContainer {
+    border: purple solid 2px;
+    display: flex;
+}
