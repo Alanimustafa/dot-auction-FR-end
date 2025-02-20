@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import "./Styles/Pages.css"
+import Nav from "../Components/Nav";
 
 function Home () {
     const [vehicles, setVehicles] = useState([])
@@ -14,7 +16,9 @@ function Home () {
     },[])
     return (
         <>
-        <h1>Home Page</h1>
+            <h1 className="logoHeader">BACK LOT Home Page</h1>
+            <h3 className="logoHeader">Vehicles inventory management system</h3>
+            <Nav></Nav>
         </>
     )
 }

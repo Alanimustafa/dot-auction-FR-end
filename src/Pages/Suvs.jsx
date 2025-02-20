@@ -4,7 +4,7 @@ import axios from "axios";
 function Suvs () {
     return (
         <>
-        <h1>SUV Vehicles Page</h1>
+        <h1 className="logoHeader">SUV Vehicles Page</h1>
         </>
     )
 }

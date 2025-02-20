@@ -4,7 +4,7 @@ import axios from "axios";
 function Compacts () {
     return (
         <>
-        <h1>Compact Vehicles Page</h1>
+        <h1 className="logoHeader">Compact Vehicles Page</h1>
         </>
     )
 }

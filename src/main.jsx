@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import './index.css'
+// import './index.css'
 import App from './App.jsx'
 
 // Routes Modules Imports
@@ -33,11 +33,13 @@ createRoot(document.getElementById('root')).render(
         <Route path="/suvs" element={<Suvs />}></Route>
 
 
+        {/* VAN Vehicles Route */}
+        <Route path="/vans" element={<Vans />}></Route>
+
+
         {/* Trucks Vehicles Route */}
         <Route path="/trucks" element={<Trucks />}></Route>
 
-        {/* VAN Vehicles Route */}
-        <Route path="/vans" element={<Vans />}></Route>
 
         {/* Inventory Manager Route */}
         <Route path="/inventory" element={<Inventory />}></Route>

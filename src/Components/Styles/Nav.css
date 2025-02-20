@@ -1,0 +1,19 @@
+.NavigationBar {
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+}
+
+.NavMainContainer {
+    display: flex;
+    border: red solid 2px;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.InventoryManager {
+    display: flex;
+    border: green solid 2px;
+    width: 20%;
+    justify-content: space-around;
+}
