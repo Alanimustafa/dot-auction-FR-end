@@ -1,19 +1,42 @@
 .NavigationBar {
-    background-color: gray;
+    background-color: black;
     display: flex;
     justify-content: space-around;
+    height: 7vh;
+    align-items: center;
+    border: wheat solid 1px;
 }
 
 .NavMainContainer {
     display: flex;
-    border: red solid 2px;
     width: 70%;
     justify-content: space-around;
 }
 
 .InventoryManager {
     display: flex;
-    border: green solid 2px;
     width: 20%;
     justify-content: space-around;
+}
+
+.NavLink {
+    text-decoration: none;
+    color: wheat;
+    background-color: black;
+    border: wheat solid 2px;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    height: 5vh;
+    align-content: center;
+}
+
+.NavLink:hover {
+    box-shadow: wheat 0px 0px 10px ;
+    background-color: wheat;
+    color: black;
+}
+p {
+    padding: 0px;
+    margin: 0px;
+    
 }

@@ -1,7 +1,50 @@
-.VehicleDetailsMainContainer {
-    border: red solid 1px;
+.VehicleDetailsPageMainContainer {
+    /* border: red solid 1px; */
+    align-self: center;
+    width: 80vw;
+    height:max-content;
+    padding: 10vh;
+    display: flex;
+    margin-top: 10vh;
+    align-items: center;
 }
 
-.VehicleDetailsHeader {
+.LinkToHomePage {
+    text-decoration: none;
+    color: wheat;
+    background-color: black;
+    border: wheat solid 2px;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+.VehicleDetailsPageVehicleMakeModel {
+    /* border: orange solid 3px; */
+    width: 50%;
+}
+
+.VehicleDetailsPageHeader {
     color: brown;
+    background-color: wheat;
+    width: 70%;
+}
+
+
+.VehicleDetailsPageVehicleImageContainer {
+    background-color: white;
+    width: 85%;
+    height: 50%;
+    border: gray solid 2px;
+    border-radius: 10px;;
+    padding: 5vh;
+    justify-self: center;
+    align-content: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;}
+
+.VehicleDetailsPageVehicleImageContainer {
+    border: orange solid 3px;
+    width: 50%;
 }
