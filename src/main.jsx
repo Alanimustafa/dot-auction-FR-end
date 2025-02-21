@@ -12,8 +12,8 @@ import Suvs from './Pages/Suvs.jsx'
 import Trucks from './Pages/Trucks.jsx'
 import Vans from './Pages/Vans.jsx'
 import Inventory from './Components/Inventory.jsx'
-import NewVehicle from './Components/NewVehicle.jsx'
 import VehicleDetails from './Pages/VehicleDetails.jsx'
+import AddVehicleForm from "./Components/NewVehicle.jsx"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -46,7 +46,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/inventory" element={<Inventory />}></Route>
 
         {/* Adding New Vehicle Route */}
-        <Route path="/new" element={<NewVehicle />}></Route>
+        <Route path="/new" element={<AddVehicleForm />}></Route>
 
         {/* Vehicle Details Route */}
         <Route path="/details/:id" element={<VehicleDetails />}></Route>

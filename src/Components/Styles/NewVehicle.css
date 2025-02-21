@@ -1,0 +1,76 @@
+.AddNeVehicleMainContainer {
+    
+    margin-bottom: 5vh;
+    width: 90vw;
+}
+
+.AddnewVehicleMainTitle {
+    color: wheat;
+    background-color: brown;
+    justify-self: center;
+    width: 25vw;
+    text-align: center;
+    
+}
+
+.AddNewVehicleFormContainer {
+    height: auto;
+    display: block;
+    background-color: rgb(20, 8, 8);
+    border: orange solid 3px;
+    border-radius: 10px;
+    padding-bottom: 3vh;
+}
+
+.NewVehicleForm {
+    display: block;
+    color: white;
+
+}
+
+.NewVehicleFormFields{
+    display: flex;
+}
+
+.NewVehicleLabels {
+    color: orange;
+    margin-right: 3vw;
+    display: flex;
+    margin-top: 2vh;
+}
+
+.NewVehicleFormFirstSet {
+    width: 50%;
+    padding-left: 2vw;
+}
+
+
+.NewVehicleFormSecondtSet {
+    width: 50%;
+    padding-left: 2vw;
+
+}
+
+
+.NewVehicleAddBTNContainer {
+    justify-self: right;
+    margin-top: 2vh;
+    margin-right: 10vw;
+}
+.NewVehicleAddBTN {
+    border: wheat solid 1px;
+    background-color: black;
+    color: wheat;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+
+.NewVehicleAddBTN:hover {
+    border: black solid 1px;
+    background-color: wheat;
+    color: black;
+    cursor: pointer;
+    box-shadow: wheat 0px 0px 10px;;
+}
