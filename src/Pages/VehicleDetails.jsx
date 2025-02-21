@@ -35,10 +35,13 @@ const VehicleDetails = () => {
 
     return (
         <>
-        <div className="VehicleDetailsPageMainContainer">
-            
-            <div className="VehicleDetailsPageVehicleMakeModel">
+        <h1 className="logoHeader">BACK LOT</h1>
+        <h3 className="logoHeader">Vehicles inventory management system</h3>
+        <div className="LinktoHomePageContainer">
             <Link className="LinkToHomePage" to="/">Home</Link>
+        </div>
+        <div className="VehicleDetailsPageMainContainer">
+            <div className="VehicleDetailsPageVehicleMakeModel">
                 <h3 className="VehicleDetailsPageHeader">{vehicle.year} - {vehicle.make} | {vehicle.model}</h3>
                 <p className="VehicleDetailsPageHeader">VIN: {vehicle._id}</p>
                 <p className="VehicleDetailsPageHeader">Trim: {vehicle.trim}</p>
@@ -49,10 +52,18 @@ const VehicleDetails = () => {
                 <p className="VehicleDetailsPageHeader">Seller: {vehicle.sellerName}</p>
                 
             </div>
+            <div className="VehicleDetailsRightContainer">
+                <div className="VehicleDetailsPageVehicleImageContainer">
+                    <img className="CardVehicleImage" src={vehicle.image_url} alt="" />
+                </div>
+                <div className="VehicleDetailsBTNs">
+                    <Link className="LinkToHomePage" to="/vehicleeditor">Update this vehicle</Link>
+                    <Link className="LinkToHomePage" to="/">Delete this vehicle</Link>
+                </div>
 
-            <div className="VehicleDetailsPageVehicleImageContainer">
-                <img className="CardVehicleImage" src={vehicle.image_url} alt="" />
             </div>
+
+            
 
         </div>        
         </>

@@ -31,7 +31,6 @@ const VehicleCard = ({vehicle}) => {
                     <Link className="LinkToVehicleDetails" to={`/details/${vehicle._id}`}>
                         <h4 className="VehicleDetailsHeader">Vehicle Details</h4>
                     </Link>
-                    
                 </div>
                 
             </div>

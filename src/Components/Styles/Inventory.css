@@ -1,0 +1,73 @@
+body {
+    background-color: black;
+    width: 98%;
+    justify-self: center;
+    box-shadow: gray 0px 0px 10px;
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20230722/pngtree-minimal-geometric-3d-background-with-golden-accent-for-luxurious-product-display-image_3784615.jpg");
+    background-size: cover;
+    justify-items: center;
+    margin: 0px;
+    }
+
+.PageMainContainer {
+    width: 100%;
+    border: red solid 3px;
+    justify-self: center;
+}
+
+.VehiclesListContainerOnHomePage {
+    width: 95%;
+    display: flex;
+    border: orange solid 3px;
+    justify-self: center;
+}
+.logoHeader {
+    color: yellow;
+    font-style: italic;
+    margin: 0px;
+}
+
+
+.inventoryList {
+    width: 90vw;
+    padding-top: 10vh
+}
+
+.InventoryManagerTitle {
+    color: wheat;
+    justify-self: center;
+    background-color: brown;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+
+.LinkToHomePage {
+    margin: 5vw;
+}
+.InventoryVehiclesList {
+    color: wheat;
+    background-color: rgb(54, 36, 1);
+    align-items: center;
+    width: 90%;
+    border: orange solid 1px;
+    margin:1vh;
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ListedVehicleImage {
+    width: 3vw;
+    height: 3vh;
+    margin-right: 1vw;;
+}
+
+.VehicleInventoryViewDetailsContainer {
+    background-color: black;
+    border: wheat solid 1px;
+    margin: 5px;
+}
+
+
+

@@ -5,8 +5,13 @@
     height:max-content;
     padding: 10vh;
     display: flex;
-    margin-top: 10vh;
+    margin-top: 5vh;
     align-items: center;
+}
+
+.LinktoHomePageContainer {
+    margin-top: 3vh;
+    margin-left: 20px;
 }
 
 .LinkToHomePage {
@@ -19,10 +24,16 @@
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
 }
+.LinkToHomePage:hover{
+    box-shadow: wheat 0px 0px 10px ;
+    background-color: wheat;
+    color: black;
+}
 
 .VehicleDetailsPageVehicleMakeModel {
     /* border: orange solid 3px; */
     width: 50%;
+    align-self:flex-start;
 }
 
 .VehicleDetailsPageHeader {
@@ -31,7 +42,11 @@
     width: 70%;
 }
 
-
+.VehicleDetailsRightContainer {
+    justify-items: center;
+    width: 60%;
+    height: 60vh
+}
 .VehicleDetailsPageVehicleImageContainer {
     background-color: white;
     width: 85%;
@@ -42,9 +57,10 @@
     justify-self: center;
     align-content: center;
     margin-top: 1vh;
-    margin-bottom: 1vh;}
-
-.VehicleDetailsPageVehicleImageContainer {
+    margin-bottom: 1vh;
     border: orange solid 3px;
-    width: 50%;
+    width: 80%;
+    margin-bottom: 6vh;
 }
+    
+

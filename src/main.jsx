@@ -48,7 +48,7 @@ createRoot(document.getElementById('root')).render(
         {/* Adding New Vehicle Route */}
         <Route path="/new" element={<NewVehicle />}></Route>
 
-        {/* Adding New Vehicle Route */}
+        {/* Vehicle Details Route */}
         <Route path="/details/:id" element={<VehicleDetails />}></Route>
 
       </Routes>
