@@ -1,14 +1,26 @@
 body {
     background-color: black;
-    margin:0px;
-}
+    width: 98%;
+    justify-self: center;
+    box-shadow: gray 0px 0px 10px;
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20230722/pngtree-minimal-geometric-3d-background-with-golden-accent-for-luxurious-product-display-image_3784615.jpg");
+    background-size: cover;
+    justify-items: center;
+    margin: 0px;
+    }
 
 .PageMainContainer {
-    background-color: #333f3c;
-    width: 95vw;
+    width: 100%;
+    border: red solid 3px;
     justify-self: center;
 }
 
+.VehiclesListContainerOnHomePage {
+    width: 95%;
+    display: flex;
+    border: orange solid 3px;
+    justify-self: center;
+}
 .logoHeader {
     color: yellow;
     font-style: italic;

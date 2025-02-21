@@ -13,17 +13,20 @@ const VehicleCard = ({vehicle}) => {
         <>
             <div className="VehicleCardMainContainer">
                 
-                <div className="VehicleHeaderCard">
-                    <h3 className="VehicleHeader">{vehicle.year} {vehicle.make} {vehicle.model} {vehicle.trim}</h3>
-                </div>
-                
                 <div className="VehicleImageContainer">
                     <img className="CardVehicleImage" src={vehicle.image_url} alt="" />
                 </div>
 
+                <div className="VehicleHeaderCard">
+                    <h4 className="VehicleHeader">{vehicle.year} {vehicle.make} {vehicle.model} {vehicle.trim}</h4>
+                </div>
+                
+
+
                 <div className="VehicleCardInformation">
+                    <p className="VehicleCardInformationMileage">Mileage: {vehicle.mileage} miles</p>
+                    <p className="VehicleCArdInformationColor">Color: {vehicle.color}</p>
                     <h4 className="VehicleCardInformationPrice"> Price : ${vehicle.price}</h4>
-                    <h5 className="VehicleCardInformationMileage">Mileage: {vehicle.mileage} miles</h5>
                 </div>
                 
             </div>

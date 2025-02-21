@@ -1,4 +1,7 @@
 .VehicleListMainContainer {
     border: purple solid 2px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
