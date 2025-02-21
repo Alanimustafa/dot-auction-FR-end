@@ -1,11 +1,11 @@
 .VehicleDetailsPageMainContainer {
-    /* border: red solid 1px; */
     align-self: center;
     width: 80vw;
     height:max-content;
-    padding: 10vh;
+    padding: 8vh;
     display: flex;
     margin-top: 5vh;
+    margin-bottom: 5vh;
     align-items: center;
 }
 
@@ -34,23 +34,30 @@
     /* border: orange solid 3px; */
     width: 50%;
     align-self:flex-start;
+    border: orange solid 2px;
+    border-radius: 10px;
+    background-color: rgb(75, 67, 47);
+    justify-items: center;
 }
 
 .VehicleDetailsPageHeader {
     color: brown;
     background-color: wheat;
-    width: 70%;
+    width: 90%;
+    margin: 1vh;
+    border: gray solid 3px;
+    padding-left: 1vw
 }
 
 .VehicleDetailsRightContainer {
     justify-items: center;
     width: 60%;
     height: 60vh
+
 }
 .VehicleDetailsPageVehicleImageContainer {
     background-color: white;
-    width: 85%;
-    height: 50%;
+    height: 37vh;
     border: gray solid 2px;
     border-radius: 10px;;
     padding: 5vh;
@@ -59,8 +66,43 @@
     margin-top: 1vh;
     margin-bottom: 1vh;
     border: orange solid 3px;
-    width: 80%;
+    
     margin-bottom: 6vh;
+}
+
+.VehicleImage {
+    width: 20vw;
+    height: 36vh
+}
+
+.VehicleDetailsBTNs {
+    width: 30vw;
+    height: 5vh;
+    align-content: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.UpdateLink,
+.DeleteLink {
+    text-decoration: none;
+    background-color: black;
+    color: wheat;
+    border: wheat solid 1px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    overflow: hidden;
+}
+
+.UpdateLink:hover,
+.DeleteLink:hover {
+    background-color: wheat;
+    color: black;
+    border: black solid 1px;
+    cursor: pointer;
+    box-shadow: wheat 0px 0px 10px;
 }
     
 

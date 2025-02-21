@@ -44,6 +44,8 @@ const VehicleDetails = () => {
             <div className="VehicleDetailsPageVehicleMakeModel">
                 <h3 className="VehicleDetailsPageHeader">{vehicle.year} - {vehicle.make} | {vehicle.model}</h3>
                 <p className="VehicleDetailsPageHeader">VIN: {vehicle._id}</p>
+                <p className="VehicleDetailsPageHeader">Year {vehicle.year}</p>
+                <p className="VehicleDetailsPageHeader">Make {vehicle.make}</p>
                 <p className="VehicleDetailsPageHeader">Trim: {vehicle.trim}</p>
                 <p className="VehicleDetailsPageHeader">Color: {vehicle.color}</p>
                 <p className="VehicleDetailsPageHeader">Fule type: {vehicle.fuel_type}</p>
@@ -54,11 +56,11 @@ const VehicleDetails = () => {
             </div>
             <div className="VehicleDetailsRightContainer">
                 <div className="VehicleDetailsPageVehicleImageContainer">
-                    <img className="CardVehicleImage" src={vehicle.image_url} alt="" />
+                    <img className="VehicleImage" src={vehicle.image_url} alt="" />
                 </div>
                 <div className="VehicleDetailsBTNs">
-                    <Link className="LinkToHomePage" to="/vehicleeditor">Update this vehicle</Link>
-                    <Link className="LinkToHomePage" to="/">Delete this vehicle</Link>
+                    <Link className="UpdateLink" to="/vehicleeditor">Update this vehicle</Link>
+                    <Link className="DeleteLink" to="/">Delete this vehicle</Link>
                 </div>
 
             </div>
