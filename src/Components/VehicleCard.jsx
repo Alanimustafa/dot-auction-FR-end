@@ -21,12 +21,17 @@ const VehicleCard = ({vehicle}) => {
                     <h4 className="VehicleHeader">{vehicle.year} {vehicle.make} {vehicle.model} {vehicle.trim}</h4>
                 </div>
                 
-
-
                 <div className="VehicleCardInformation">
                     <p className="VehicleCardInformationMileage">Mileage: {vehicle.mileage} miles</p>
                     <p className="VehicleCArdInformationColor">Color: {vehicle.color}</p>
                     <h4 className="VehicleCardInformationPrice"> Price : ${vehicle.price}</h4>
+                </div>
+
+                <div className="VehicldeDetails">
+                    <Link className="LinkToVehicleDetails" to={`/details/${vehicle._id}`}>
+                        <h4 className="VehicleDetailsHeader">Vehicle Details</h4>
+                    </Link>
+                    
                 </div>
                 
             </div>

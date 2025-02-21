@@ -3,7 +3,7 @@
     border:gray solid 3px;
     border-radius: 10px;
     width: 18%;
-    height: 20em;
+    height: 22em;
     padding-bottom: 1em;
     padding-top: 1em;
     margin: 1em;
@@ -18,7 +18,7 @@
 
 .VehicleHeaderCard {
     /* border: green solid 2px; */
-    height: 4em;
+    height: 3em;
     padding-right: 1em;
     padding-left: 1em;
     margin: 0px;
@@ -48,7 +48,7 @@
 }
 
 .VehicleCardInformation {
-    border: orange solid 2px;
+    border: orange solid 1px;
     margin: 0px;
     width: 90%;
     height: 4.5em;
@@ -69,4 +69,32 @@
     justify-self: left;
     margin: 0px;
     font-size: 18px;;
+}
+
+.VehicldeDetails {
+    border: gray solid 2px;
+    border-radius: 0px 0px 10px 10px ;
+    background-color: black;
+    width: 98%;
+    justify-self: center;
+    margin-top:1vh;
+    padding-top: 10px;
+    padding-bottom: 10px;;
+}
+
+.LinkToVehicleDetails {
+    text-decoration: none;
+}
+
+.VehicleDetailsHeader {
+    color: white;
+    justify-self: center;
+    margin: 0px;
+    
+    
+}
+
+.VehicleDetailsHeader:hover {
+    color:rgb(252, 211, 135);
+    cursor: pointer;
 }
