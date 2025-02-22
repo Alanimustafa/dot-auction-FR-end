@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Styles/VehicleUpdator.css"
+import { Link } from "react-router-dom";
 
 
 // The VehicleUpdator Functoin
@@ -56,7 +57,7 @@ const VehicleUpdator = () => {
         <div className="VehicleUpdatorPageMainContainer">
             <h1 className="logoHeader">BACK LOT Home Page</h1>
             <h3 className="logoHeader">Vehicles inventory management system</h3>
-            <h4>Vehicle Information Update</h4>
+            <h4 className="VehicleUpdatorHeader">Vehicle Information Update</h4>
             <form className="NewVehicleForm" onSubmit={handleSubmit}>
 
                 <div className="NewVehicleFormFields">
@@ -148,6 +149,7 @@ const VehicleUpdator = () => {
 
                 <div className="NewVehicleAddBTNContainer">
                     <button className="NewVehicleAddBTN" type="submit">Update Vehicle</button>
+                    <Link className="CancelLink" to="/">Cancel</Link>
                 </div>
 
                 </form>   
