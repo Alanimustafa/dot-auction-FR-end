@@ -1,0 +1,98 @@
+.DeleteVehiclePageMainContainer {
+    border: orange solid 2px;
+    width: 90vw;
+    height: 90vh;
+}
+
+.DeleteVehicleHeader {
+    background-color: brown;
+    color: wheat;
+    justify-self: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.DeletedVehicleConfirmationContainer {
+    border: red solid 3px;
+    border-radius: 10px;
+    background-color: rgb(7, 6, 6);
+    width: 50%;
+    justify-self: center;
+    margin-top:10vh
+}
+
+.RemovingVehicleHeader {
+    color: red;
+    background-color: wheat;
+    padding-left: 1vw;
+    width: 93%;
+    margin-left: 1vw;
+    border: red solid 1px;
+}
+
+.DeletigWarning {
+    color: orange;
+    padding-left: 1vw;
+}
+
+.RemovingVehicleConfirmationBTNs {
+    margin-top: 6vh;
+    width: 60%;
+    justify-self: center;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 3vh;
+}
+
+.deleteButton,
+.CancelToHomePage,
+.LinkToInventoryPage,
+.DelConfLinkToHomePage {
+    color: wheat;
+    background-color: black;
+    border: wheat solid 1px;
+    width: 13vw;
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.deleteButton:hover,
+.CancelToHomePage:hover,
+.LinkToInventoryPage:hover,
+.DelConfLinkToHomePage:hover {
+    color: black;
+    background-color: wheat;
+    border: black solid 1px;
+    cursor: pointer;
+    box-shadow: wheat 0px 0px 10px;
+}
+
+.confirmDeletion {
+    border : wheat solid 3px;
+    border-radius: 10px;
+    margin-top: 8vh;
+    width: auto;
+    max-width: 50%;
+    height: 20vh;
+    justify-self: center;
+    padding: 10px;
+    background-color: black;
+}
+
+.RemovedConfirmationHeader {
+    color: white;
+    text-align: center;
+    
+}
+
+.RedirectBTNsContainer {
+    
+    width: 27%;
+    height: 5vh;
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
+}

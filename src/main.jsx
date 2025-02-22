@@ -15,6 +15,7 @@ import Inventory from './Components/Inventory.jsx'
 import VehicleDetails from './Pages/VehicleDetails.jsx'
 import AddVehicleForm from "./Components/NewVehicle.jsx"
 import VehicleUpdator from './Components/VehicleUpdator.jsx'
+import DeleteVehicle from './Components/VehicleDelete.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -30,18 +31,14 @@ createRoot(document.getElementById('root')).render(
         {/* Sedan Vehicles Route */}
         <Route path="/sedans" element={<Sedans />}></Route>
 
-
         {/* SUV Vehicles Route */}
         <Route path="/suvs" element={<Suvs />}></Route>
-
 
         {/* VAN Vehicles Route */}
         <Route path="/vans" element={<Vans />}></Route>
 
-
         {/* Trucks Vehicles Route */}
         <Route path="/trucks" element={<Trucks />}></Route>
-
 
         {/* Inventory Manager Route */}
         <Route path="/inventory" element={<Inventory />}></Route>
@@ -54,6 +51,9 @@ createRoot(document.getElementById('root')).render(
 
         {/* Vehicle Updator Route */}
         <Route path="/update/:id" element={<VehicleUpdator />}></Route>
+
+        {/* Delete Vehicle Route */}
+        <Route path="/delete/:id" element={<DeleteVehicle />}></Route>
 
         {/* 404 Page Not Found Route */}
         <Route path="*" element={<h1>404: Page Not Found</h1>}></Route>

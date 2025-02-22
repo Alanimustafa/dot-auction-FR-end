@@ -59,8 +59,8 @@ const VehicleDetails = () => {
                     <img className="VehicleImage" src={vehicle.image_url} alt="" />
                 </div>
                 <div className="VehicleDetailsBTNs">
-                    <Link className="UpdateLink" to={`/update/${id}`}> Update this vehicle</Link>
-                    <Link className="DeleteLink" to="/">Delete this vehicle</Link>
+                    <Link className="UpdateLink" to={`/update/${id}`}> Update this vehicle </Link>
+                    <Link className="DeleteLink" to={`/delete/${id}`}> Delete this vehicle </Link>
                 </div>
 
             </div>
