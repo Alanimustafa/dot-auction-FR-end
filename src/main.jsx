@@ -14,6 +14,7 @@ import Vans from './Pages/Vans.jsx'
 import Inventory from './Components/Inventory.jsx'
 import VehicleDetails from './Pages/VehicleDetails.jsx'
 import AddVehicleForm from "./Components/NewVehicle.jsx"
+import VehicleUpdator from './Components/VehicleUpdator.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -50,6 +51,12 @@ createRoot(document.getElementById('root')).render(
 
         {/* Vehicle Details Route */}
         <Route path="/details/:id" element={<VehicleDetails />}></Route>
+
+        {/* Vehicle Updator Route */}
+        <Route path="/update/:id" element={<VehicleUpdator />}></Route>
+
+        {/* 404 Page Not Found Route */}
+        <Route path="*" element={<h1>404: Page Not Found</h1>}></Route>
 
       </Routes>
     </Router>

@@ -2,8 +2,10 @@ import { useState } from "react";
 import axios from "axios";
 import "./Styles/NewVehicle.css"
 import Nav from "./Nav";
+import { useNavigate } from "react-router-dom";
 
 const AddVehicleForm = () => {
+  const nav = useNavigate();
   const [formData, setFormData] = useState({
     condition: "",
     type: "Vehicle",
@@ -46,6 +48,7 @@ const AddVehicleForm = () => {
       });
       console.log("Vehicle added:", response.data);
       alert("Vehicle successfully added!");
+      nav('/');
     } catch (error) {
       console.error("Error adding vehicle:", error);
       alert("Failed to add vehicle");
