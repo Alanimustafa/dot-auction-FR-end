@@ -11,15 +11,17 @@ body {
 
 .PageMainContainer {
     width: 100%;
-    border: red solid 3px;
+    /* border: red solid 3px; */
     justify-self: center;
 }
 
 .VehiclesListContainerOnHomePage {
     width: 95%;
     display: flex;
-    border: orange solid 3px;
+    border:wheat solid 3px;
+    border-radius: 10px;
     justify-self: center;
+    margin-top: 3vh
 }
 .logoHeader {
     color: yellow;

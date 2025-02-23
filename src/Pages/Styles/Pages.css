@@ -29,6 +29,23 @@ body {
     margin: 0px;
 }
 
+.HomePageMainimageCentralContainer {
+    border: wheat solid 1px;
+    height: 70vh;
+    margin-top: 4vh;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('https://t4.ftcdn.net/jpg/06/92/61/21/360_F_692612180_XAUFLe7Mw3Vvef8H33QudG16RWh9H0d1.jpg');
+    background-size: cover;
+}
+
+.HomaPageMainImageRightContainer {
+    width: 50%;
+}
+
+.HomaPageMainImageLeftContainer {
+    width: 50%;
+}
 
 /* All Category Pages Styles */
 
