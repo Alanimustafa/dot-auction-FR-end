@@ -1,28 +1,53 @@
 body {
     background-color: black;
     width: 98%;
-    justify-self: center;
     box-shadow: gray 0px 0px 10px;
     background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20230722/pngtree-minimal-geometric-3d-background-with-golden-accent-for-luxurious-product-display-image_3784615.jpg");
     background-size: cover;
-    justify-items: center;
+    justify-content: center;
     margin: 0px;
+    padding:0px;
+    display: flex;
+
     }
 
 .PageMainContainer {
     width: 100%;
-    border: red solid 3px;
+    /* border: red solid 3px; */
     justify-self: center;
 }
 
 .VehiclesListContainerOnHomePage {
     width: 95%;
     display: flex;
-    border: orange solid 3px;
+    /* border: orange solid 3px; */
     justify-self: center;
 }
 .logoHeader {
     color: yellow;
     font-style: italic;
     margin: 0px;
+}
+
+
+/* All Category Pages Styles */
+
+.CatPageMainContainer {
+    border: wheat solid 2px;
+    width: 95vw;
+    display: block;
+}
+
+.VehicleTypeCategoryHeader {
+    color: wheat;
+    padding-left: 3vw;
+    border: wheat solid 1px;
+    box-shadow: wheat 0px 0px 5px;
+    text-shadow: black 1px 1px 5px;;
+}
+
+.CatVehcilesDisplayContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
