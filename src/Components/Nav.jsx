@@ -39,7 +39,7 @@ function Nav () {
             </nav>
 
             <nav className="InventoryManager">
-                <Link className="NavLink" to="inventory">
+                <Link className="NavLink" to="/inventory">
                     <p>Inventory Manager</p>
                 </Link>
             </nav>

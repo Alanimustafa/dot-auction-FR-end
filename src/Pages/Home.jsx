@@ -20,8 +20,10 @@ function Home () {
     return (
         <>
             <div className="PageMainContainer">
-                <h1 className="logoHeader">BACK LOT </h1>
-                <h3 className="logoHeader">Vehicles inventory management system</h3>
+                <div className="mainpageHeaderBackBar">
+                    <h1 className="logoHeader">BACK LOT </h1>
+                    <h3 className="logoHeader">Vehicles inventory management system</h3>
+                </div>
                 <Nav></Nav>
 
                 <div className="HomePageMainimageCentralContainer">

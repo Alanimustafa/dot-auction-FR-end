@@ -11,6 +11,13 @@ body {
 
     }
 
+    .mainpageHeaderBackBar {
+        border: wheat solid 1px;
+        margin-bottom: 3vh;
+        margin-top: 2vh;
+        padding-left: 1vw
+    }
+
 .PageMainContainer {
     width: 100%;
     /* border: red solid 3px; */
