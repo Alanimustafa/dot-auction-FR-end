@@ -28,7 +28,7 @@ function Inventory () {
                     <Link className="LinkToHomePage" to="/new">New Vehicle</Link>
                     <ul className="VehicleUnOrderedList">
                         <h3 className="InventoryManagerTitle">Inventory Manager</h3>
-                        
+                        <h3 className="totalInventory">Current inventory: {vehicles.length} Vehicles</h3>
                         {vehicles.map(vehicle => (
                             <li key={vehicle._id} className="InventoryVehiclesList">
                                 <div className="ImageAndYearModelMake">

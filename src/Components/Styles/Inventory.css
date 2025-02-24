@@ -29,7 +29,11 @@ body {
     margin: 0px;
 }
 
-
+.totalInventory {
+    color: wheat;
+    margin-left: 4vw;
+    margin-bottom: 0px;
+}
 .inventoryList {
     width: 90vw;
     padding-top: 10vh
