@@ -92,14 +92,41 @@ const AddVehicleForm = () => {
                     <label className="NewVehicleLabels">Year :</label>
                     <input type="number" name="year" value={formData.year} onChange={handleChange} placeholder="Year" required />
 
-                    <label className="NewVehicleLabels">Make :</label>
-                    <input type="text" name="make" value={formData.make} onChange={handleChange} placeholder="Make" required />
+                    <label className="NewVehicleLabels">MAKE</label>
+                    <select name="make" type="text" value={formData.make} onChange={handleChange}>
+                        <option value="ACURA">Acura</option>
+                        <option value="BMW">BMW</option>
+                        <option value="CADILAC">Cadilac</option>
+                        <option value="CHEVROLET">Chevrolet</option>
+                        <option value="CHRYSLER">Chrysler</option>
+                        <option value="DODGE">Dodge</option>
+                        <option value="FORD">Ford</option>
+                        <option value="GMC">GMC</option>
+                        <option value="HONDA">Honda</option>
+                        <option value="HYUNDAI">Hyundai</option>
+                        <option value="JEEP">Jeep</option>
+                        <option value="KIA">Kia</option>
+                        <option value="LINCOLIN">Lincolin</option>
+                        <option value="MAZDA">Mazda</option>
+                        <option value="MERCEDES-BENZ">Mercedes-Benz</option>
+                        <option value="MITSUBISHI">Mitsubishi</option>
+                        <option value="NISSAN">Nissan</option>
+                        <option value="SUBARU">Subaru</option>
+                        <option value="SUZIKI">Suzuki</option>
+                        <option value="TESLA">Tesla</option>
+                        <option value="TOYOTA">Toyota</option>
+                        <option value="VOLKSWAGON">Volkswagon</option>
+                    </select>
+
 
                     <label className="NewVehicleLabels">Model :</label>
                     <input type="text" name="model" value={formData.model} onChange={handleChange} placeholder="Model" required />
 
                     <label className="NewVehicleLabels">Trim :</label>
                     <input type="text" name="trim" value={formData.trim} onChange={handleChange} placeholder="Trim" />
+
+                    
+
 
                     <label className="NewVehicleLabels">Color :</label>
                     <input type="text" name="color" value={formData.color} onChange={handleChange} placeholder="Color" />

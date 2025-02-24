@@ -16,7 +16,7 @@
 .AddNewVehicleFormContainer {
     height: auto;
     display: block;
-    background-color: rgb(20, 8, 8);
+    
     border: orange solid 3px;
     border-radius: 10px;
     padding-bottom: 3vh;
