@@ -16,9 +16,9 @@ body {
 }
 
 .VehiclesListContainerOnHomePage {
-    width: 95%;
+    width: 100%;
     display: flex;
-    border:wheat solid 3px;
+    border:wheat solid 1px;
     border-radius: 10px;
     justify-self: center;
     margin-top: 3vh

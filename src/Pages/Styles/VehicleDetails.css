@@ -57,7 +57,8 @@
 }
 .VehicleDetailsPageVehicleImageContainer {
     background-color: white;
-    height: 37vh;
+    height: 38vh;
+    width: 30vw;
     border: gray solid 2px;
     border-radius: 10px;;
     padding: 5vh;
@@ -71,8 +72,9 @@
 }
 
 .VehicleImage {
-    width: 20vw;
-    height: 36vh
+    width: 29vw;
+    height: 44vh;
+    justify-self: center;
 }
 
 .VehicleDetailsBTNs {

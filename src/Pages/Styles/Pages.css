@@ -48,10 +48,46 @@ body {
 
 .HomaPageMainImageRightContainer {
     width: 50%;
+    align-content: center;
+
 }
 
 .HomaPageMainImageLeftContainer {
-    width: 50%;
+    width: 60%;
+    
+    color: red;
+    text-shadow: white 2px 2px 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ImageLoopContainer {
+    width: 40vw;
+    height: 43vh;
+    border-radius: 10px;
+    align-self: center;
+    justify-self:last baseline;
+    margin-top: 20vh;;
+}
+
+.imageLoopVehiclesInfo {
+    color: orange;
+    text-shadow: black 2px 2px 2px;
+    width: 49%;
+    padding: 9px;
+    border: orange solid 2px;
+    border-radius: 10px;
+}
+
+.HomePageAllVehicleHeaderContainer {
+    border: wheat solid 1px;
+    margin-top: 3vh;
+}
+
+.HomePageListHeader {
+    color: wheat;
+    margin: 0px;
+    text-align: center;
 }
 
 /* All Category Pages Styles */

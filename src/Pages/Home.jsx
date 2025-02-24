@@ -1,47 +1,70 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "./Styles/Pages.css"
+import "./Styles/Pages.css";
 
-// Importing Componenets
+// Importing Components
 import Nav from "../Components/Nav";
 import VehicleList from "../Components/VehicleList.jsx";
 
-function Home () {
-    const [vehicles, setVehicles] = useState([])
+function Home() {
+    const [vehicles, setVehicles] = useState([]);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    // console.log(vehicles)
-    useEffect(()=>{
+    useEffect(() => {
         axios.get("http://localhost:3000/")
-        .then(response => {setVehicles(response.data)
-           // console.log("Vehicle Data :",response.data);
-        })
-        .catch((error) => {console.error(error)})
-    },[])
+            .then(response => {
+                setVehicles(response.data);
+            })
+            .catch(error => console.error(error));
+    }, []);
+
+    useEffect(() => {
+        if (vehicles.length === 0) return;
+
+        const interval = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % vehicles.length);
+        }, 4000);
+
+        return () => clearInterval(interval);
+    }, [vehicles]);
+
     return (
-        <>
-            <div className="PageMainContainer">
-                <div className="mainpageHeaderBackBar">
-                    <h1 className="logoHeader">BACK LOT </h1>
-                    <h3 className="logoHeader">Vehicles inventory management system</h3>
-                </div>
-                <Nav></Nav>
+        <div className="PageMainContainer">
+            <div className="mainpageHeaderBackBar">
+                <h1 className="logoHeader">BACK LOT</h1>
+                <h3 className="logoHeader">Vehicles Inventory Management System</h3>
+            </div>
+            <Nav />
 
-                <div className="HomePageMainimageCentralContainer">
+            <div className="HomePageMainimageCentralContainer">
+                <div className="HomaPageMainImageLeftContainer">
+                    <h1>Left Container</h1>
+                </div>
+                <div className="HomaPageMainImageRightContainer">
+                    {vehicles.length > 0 && ( 
+                        <>
+                        <h4 className="imageLoopVehiclesInfo">{vehicles[currentImageIndex].year} - {vehicles[currentImageIndex].make} {vehicles[currentImageIndex].model}</h4>
+                        <img 
+                            src={vehicles[currentImageIndex].image_url} 
+                            alt="Vehicle" 
+                            className="ImageLoopContainer"
+                        />
+                        
+                        </>
+                    )}
                     
-                    <div className="HomaPageMainImageRightContainer">
-                        <h1>Right Container</h1>
-                    </div>
-                    <div className="HomaPageMainImageLeftContainer">
-                        <h1>Left Container</h1>
-                    </div>
-                </div>
-
-                <div className="VehiclesListContainerOnHomePage">
-                    <VehicleList vehicles={vehicles}/>
                 </div>
             </div>
-        </>
-    )
+
+            <div className="HomePageAllVehicleHeaderContainer">
+                <h2 className="HomePageListHeader">All Vehicles</h2>
+            </div>
+
+            <div className="VehiclesListContainerOnHomePage">
+                <VehicleList vehicles={vehicles} />
+            </div>
+        </div>
+    );
 }
 
 export default Home;
