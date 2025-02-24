@@ -38,7 +38,8 @@ function Home() {
 
             <div className="HomePageMainimageCentralContainer">
                 <div className="HomaPageMainImageLeftContainer">
-                    <h1>Left Container</h1>
+                    <h1 className="backLotLeftHeaderH1">BACK LOT MOTORS</h1>
+                    <h3 className="backLotLeftHeaderH3">Inventory Management System</h3>
                 </div>
                 <div className="HomaPageMainImageRightContainer">
                     {vehicles.length > 0 && ( 

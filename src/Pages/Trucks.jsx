@@ -20,7 +20,7 @@ function Trucks () {
         <>
             <div className="CatPageMainContainer">
                 
-                    <h1 className="logoHeader">BACK LOT - SEDANS</h1>
+                    <h1 className="logoHeader">BACK LOT</h1>
                     <h3 className="logoHeader">Vehicles inventory management system</h3>
                     <Nav></Nav>
                     <h2 className="VehicleTypeCategoryHeader">TRUCKS</h2>

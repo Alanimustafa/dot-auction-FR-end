@@ -21,7 +21,7 @@ function Inventory () {
     return (
         <>
             <div className="PageMainContainer">
-                <h1 className="logoHeader">BACK LOT Home Page</h1>
+                <h1 className="logoHeader">BACK LOT</h1>
                 <h3 className="logoHeader">Vehicles inventory management system</h3>
                 <Nav></Nav>
                 <div className="inventoryList">

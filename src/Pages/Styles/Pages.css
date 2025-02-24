@@ -12,7 +12,7 @@ body {
     }
 
     .mainpageHeaderBackBar {
-        border: wheat solid 1px;
+        border: orange solid 1px;
         margin-bottom: 3vh;
         margin-top: 2vh;
         padding-left: 1vw
@@ -31,7 +31,7 @@ body {
     justify-self: center;
 }
 .logoHeader {
-    color: yellow;
+    color: orange;
     font-style: italic;
     margin: 0px;
 }
@@ -54,11 +54,25 @@ body {
 
 .HomaPageMainImageLeftContainer {
     width: 60%;
-    
-    color: red;
-    text-shadow: white 2px 2px 1px;
+    color: orange;
     text-align: center;
-    text-transform: uppercase;
+    font-family: impact;
+    font-size: 55px;
+    align-self: center;
+}
+
+.backLotLeftHeaderH1 {
+    color: black;
+    margin: 0px;
+    background-color: orange;
+    border: black solid 2px;
+}
+
+.backLotLeftHeaderH3 {
+    color: orange;
+    margin: 0px;
+    background-color: black;
+    border: orange solid 2px;
 }
 
 .ImageLoopContainer {
@@ -67,7 +81,8 @@ body {
     border-radius: 10px;
     align-self: center;
     justify-self:last baseline;
-    margin-top: 20vh;;
+    margin-top: 20vh;
+    margin-left: 8vw;
 }
 
 .imageLoopVehiclesInfo {
