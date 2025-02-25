@@ -9,7 +9,7 @@ function Trucks () {
 
     // console.log("The Truck Vehicles :", vehicles); // for test only
     useEffect(()=>{
-        axios.get("http://localhost:3000/")
+        axios.get("https://dot-auction-bk-end.onrender.com/")
         .then( response => {
                 const filterVehiclesType = response.data.filter( vehicle => vehicle.type === "TRUCK")
                 setVehicles(filterVehiclesType);
