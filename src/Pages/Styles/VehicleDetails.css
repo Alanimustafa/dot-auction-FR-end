@@ -72,9 +72,10 @@
 }
 
 .VehicleImage {
-    width: 29vw;
-    height: 44vh;
+    width: 32vw;
+    height: 38vh;
     justify-self: center;
+    align-self: center;
 }
 
 .VehicleDetailsBTNs {

@@ -125,11 +125,21 @@ const AddVehicleForm = () => {
                     <label className="NewVehicleLabels">Trim :</label>
                     <input type="text" name="trim" value={formData.trim} onChange={handleChange} placeholder="Trim" />
 
-                    
+                    <label className="NewVehicleLabels">Color</label>
+                    <select name="color" type="text" value={formData.color} onChange={handleChange}>
+                        <option value="BLACK">Black</option>
+                        <option value="WHITE">White</option>
+                        <option value="GRAY">Gray</option>
+                        <option value="BLUE">Blue</option>
+                        <option value="SILVER">Silver</option>
+                        <option value="GREEN">Green</option>
+                        <option value="SILVER">Silver</option>
+                        <option value="MAROON">Maroon</option>
+                    </select>
 
 
-                    <label className="NewVehicleLabels">Color :</label>
-                    <input type="text" name="color" value={formData.color} onChange={handleChange} placeholder="Color" />
+                    {/* <label className="NewVehicleLabels">Color :</label>
+                    <input type="text" name="color" value={formData.color} onChange={handleChange} placeholder="Color" /> */}
 
                     <label className="NewVehicleLabels">Price :</label>
                     <input type="text" name="price" value={formData.price} onChange={handleChange} placeholder="Price" required />
