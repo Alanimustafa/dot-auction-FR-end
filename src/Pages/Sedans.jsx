@@ -9,7 +9,7 @@ function Sedans () {
 
     // console.log("The Sedan Vehicles :", vehicles); // For test only.
     useEffect(()=>{
-        axios.get("http://localhost:3000/")
+        axios.get("https://dot-auction-bk-end.onrender.com/")
         .then( response => {
                 const filterVehiclesType = response.data.filter( vehicle => vehicle.type === "SEDAN")
                 setVehicles(filterVehiclesType);

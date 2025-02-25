@@ -12,7 +12,7 @@ function Home() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
-        axios.get("http://localhost:3000/")
+        axios.get("https://dot-auction-bk-end.onrender.com/")
             .then(response => {
                 setVehicles(response.data);
             })
