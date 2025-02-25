@@ -4,21 +4,15 @@ body {
     box-shadow: gray 0px 0px 10px;
     background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20230722/pngtree-minimal-geometric-3d-background-with-golden-accent-for-luxurious-product-display-image_3784615.jpg");
     background-size: cover;
+    background-position: center;
     justify-content: center;
-    margin: 0px;
-    padding:0px;
+
     display: flex;
-
-    }
-
-    .mainpageHeaderBackBar {
-        border: wheat solid 1px;
-        margin-bottom: 3vh;
-        margin-top: 2vh;
-        padding-left: 1vw
+    flex-direction: column;
     }
 
 .PageMainContainer {
+    margin-top: 0vh;
     width: 100%;
     /* border: red solid 3px; */
     justify-self: center;
@@ -30,16 +24,10 @@ body {
     /* border: orange solid 3px; */
     justify-self: center;
 }
-.logoHeader {
-    color: orange;
-    font-style: italic;
-    margin: 0px;
-}
 
 .HomePageMainimageCentralContainer {
     border: wheat solid 1px;
-    height: 70vh;
-    margin-top: 4vh;
+    height: 80vh;
     display: flex;
     justify-content: space-between;
     background-image: url('https://t4.ftcdn.net/jpg/06/92/61/21/360_F_692612180_XAUFLe7Mw3Vvef8H33QudG16RWh9H0d1.jpg');
@@ -49,16 +37,18 @@ body {
 .HomaPageMainImageRightContainer {
     width: 50%;
     align-content: center;
-
+    margin-top:25vh;
 }
 
 .HomaPageMainImageLeftContainer {
-    width: 60%;
+    width: 45%;
     color: orange;
     text-align: center;
     font-family: impact;
     font-size: 55px;
+    margin-top: 25vh;
     align-self: center;
+    justify-self: center;
 }
 
 .backLotLeftHeaderH1 {
@@ -81,7 +71,7 @@ body {
     border-radius: 10px;
     align-self: center;
     justify-self:last baseline;
-    margin-top: 20vh;
+    margin-top: 10vh;
     margin-left: 8vw;
 }
 
@@ -92,17 +82,18 @@ body {
     padding: 9px;
     border: orange solid 2px;
     border-radius: 10px;
+    box-shadow: wheat 0px 0px 10px;
+    
 }
 
 .HomePageAllVehicleHeaderContainer {
-    border: wheat solid 1px;
     margin-top: 3vh;
 }
 
 .HomePageListHeader {
     color: wheat;
     margin: 0px;
-    text-align: center;
+    margin-left: 3vw;
 }
 
 /* All Category Pages Styles */
@@ -111,6 +102,7 @@ body {
     border: wheat solid 2px;
     width: 95vw;
     display: block;
+    
 }
 
 .VehicleTypeCategoryHeader {
@@ -125,4 +117,5 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 7vh;
 }

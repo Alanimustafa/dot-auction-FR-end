@@ -4,8 +4,16 @@ import "./Styles/Nav.css"
 function Nav () {
     return (
         <>
+        <div className="mainpageHeaderBackBar">
+                <h1 className="logoHeader">BACK LOT</h1>
+                <h3 className="logoHeader">Vehicles Inventory Management System</h3>
+            </div>
         <div className="NavigationBar">
+            
+
             <nav className="NavMainContainer">
+
+            
 
                 {/* HOME Page Navegation Link */}
                 <Link className="NavLink" to="/">

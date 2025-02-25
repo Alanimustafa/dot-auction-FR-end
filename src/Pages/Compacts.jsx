@@ -10,7 +10,7 @@ function Compacts () {
 
     console.log("The Sedan Vehicles :", vehicles);
     useEffect(()=>{
-        axios.get("https://dot-auction-bk-end.onrender.com/")
+        axios.get("http://localhost:3000/")
         .then( response => {
                 const filterVehiclesType = response.data.filter( vehicle => vehicle.type === "COMPACT")
                 setVehicles(filterVehiclesType);
@@ -21,8 +21,7 @@ function Compacts () {
         <>
             <div className="CatPageMainContainer">
                 
-                    <h1 className="logoHeader">BACK LOT</h1>
-                    <h3 className="logoHeader">Vehicles inventory management system</h3>
+
                     <Nav></Nav>
                     <h2 className="VehicleTypeCategoryHeader">Compact Vehicles</h2>
 

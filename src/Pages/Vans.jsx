@@ -9,7 +9,7 @@ function Vans () {
 
     // console.log("The Van Vehicles :", vehicles); // for test only
     useEffect(()=>{
-        axios.get("https://dot-auction-bk-end.onrender.com/")
+        axios.get("http://localhost:3000/")
         .then( response => {
                 const filterVehiclesType = response.data.filter( vehicle => vehicle.type === "VAN")
                 setVehicles(filterVehiclesType);
@@ -20,8 +20,7 @@ function Vans () {
         <>
             <div className="CatPageMainContainer">
                 
-                    <h1 className="logoHeader">BACK LOT</h1>
-                    <h3 className="logoHeader">Vehicles inventory management system</h3>
+                   
                     <Nav></Nav>
                     <h2 className="VehicleTypeCategoryHeader">VAN Vehicles</h2>
 

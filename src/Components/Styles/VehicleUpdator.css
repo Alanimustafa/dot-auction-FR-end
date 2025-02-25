@@ -1,14 +1,28 @@
+.VehicleUpdatorPageMainContainer {
+    border: wheat solid 1px;
+    padding-bottom: 3vh;
+}
+
 .VehicleUpdatorHeader {
     color: wheat;
     background-color: brown;
     justify-self: center;
     padding-right: 10vw;
     padding-left: 10vw;
+    margin-top: 23vh;;
+}
+
+.NewVehicleForm {
+    width: 70%;
+    justify-self: center;
+    border: wheat solid 2px;
+    border-radius: 10px;;
+    padding-bottom: 3vh
 }
 
 .CancelLink {
     text-decoration: none;
-    margin-left: 10vw;
+    margin-left: 2vw;
     background-color: black ;
     color: wheat;
     border: wheat solid 1px;

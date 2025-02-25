@@ -4,6 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Styles/VehicleUpdator.css"
 import { Link } from "react-router-dom";
+import Nav from "./Nav";
 
 
 // The VehicleUpdator Functoin
@@ -19,7 +20,7 @@ const VehicleUpdator = () => {
     useEffect(()=>{
         if (!id) return;
 
-        axios.get(`https://dot-auction-bk-end.onrender.com/details/${id}`)
+        axios.get(`http://localhost:3000/details/${id}`)
         .then ( response => {
             setVehicle(response.data); // The Vehicle data setter
             setLoading(false);  // The loading Setter.
@@ -34,7 +35,7 @@ const VehicleUpdator = () => {
     // Submission function for the changes
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.put(`https://dot-auction-bk-end.onrender.com/update/${id}`, vehicle)
+        axios.put(`http://localhost:3000/update/${id}`, vehicle)
             .then(() => {
                 alert("Vehicle updated successfully");
                 navigate(`/details/${id}`); // Going back to the Vehicle details pagee.
@@ -55,8 +56,7 @@ const VehicleUpdator = () => {
     return (
         <>
         <div className="VehicleUpdatorPageMainContainer">
-            <h1 className="logoHeader">BACK LOT Home Page</h1>
-            <h3 className="logoHeader">Vehicles inventory management system</h3>
+            <Nav></Nav>
             <h4 className="VehicleUpdatorHeader">Vehicle Information Update</h4>
             <form className="NewVehicleForm" onSubmit={handleSubmit}>
 
@@ -182,9 +182,9 @@ const VehicleUpdator = () => {
 
                 <div className="NewVehicleAddBTNContainer">
                     <button className="NewVehicleAddBTN" type="submit">Update Vehicle</button>
+                    <Link className="CancelLink" to="/inventory">Inventory</Link>
                     <Link className="CancelLink" to="/">Cancel</Link>
                 </div>
-
                 </form>   
         </div>
         </>

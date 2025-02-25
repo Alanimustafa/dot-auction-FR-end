@@ -12,7 +12,7 @@ function Home() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
-        axios.get("https://dot-auction-bk-end.onrender.com/")
+        axios.get("http://localhost:3000/")
             .then(response => {
                 setVehicles(response.data);
             })
@@ -31,10 +31,7 @@ function Home() {
 
     return (
         <div className="PageMainContainer">
-            <div className="mainpageHeaderBackBar">
-                <h1 className="logoHeader">BACK LOT</h1>
-                <h3 className="logoHeader">Vehicles Inventory Management System</h3>
-            </div>
+            
             <Nav />
 
             <div className="HomePageMainimageCentralContainer">

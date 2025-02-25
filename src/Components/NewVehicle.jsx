@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Styles/NewVehicle.css"
 import Nav from "./Nav";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // New Vehicle function
 const AddVehicleForm = () => {
@@ -41,7 +42,7 @@ const AddVehicleForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://dot-auction-bk-end.onrender.com/newvehicle/", {
+      const response = await axios.post("http://localhost:3000/newvehicle/", {
         ...formData,
         year: Number(formData.year),
         isAWD: formData.isAWD === "true",
@@ -62,10 +63,7 @@ const AddVehicleForm = () => {
     <>
 
     <div className="AddNeVehicleMainContainer">
-        <div className="AddNewVehicleHeader">
-            <h1 className="logoHeader">BACK LOT Home Page</h1>
-            <h3 className="logoHeader">Vehicles inventory management system</h3>
-        </div>
+       
         <div className="AddNewVehicleNavBarContainer">
             <Nav></Nav>
         </div>
@@ -195,6 +193,8 @@ const AddVehicleForm = () => {
                 
                  <div className="NewVehicleAddBTNContainer">
                     <button className="NewVehicleAddBTN" type="submit">Add Vehicle</button>
+                    <Link className="NewVehicleCancelLink" to="/inventory">Inventory</Link>
+                    <Link className="NewVehicleCancelLink" to="/">Cancel</Link>
                 </div>
                 
             </form>    

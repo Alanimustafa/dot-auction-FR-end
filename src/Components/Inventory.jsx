@@ -11,7 +11,7 @@ function Inventory () {
 
     // console.log(vehicles) // For test only.
     useEffect(()=>{
-        axios.get("https://dot-auction-bk-end.onrender.com/")
+        axios.get("http://localhost:3000/")
         .then(response => {setVehicles(response.data)
            // console.log("Vehicle Data :",response.data);
         })
@@ -20,8 +20,7 @@ function Inventory () {
     return (
         <>
             <div className="PageMainContainer">
-                <h1 className="logoHeader">BACK LOT</h1>
-                <h3 className="logoHeader">Vehicles inventory management system</h3>
+              
                 <Nav></Nav>
                 <div className="inventoryList">
                     <Link className="LinkToHomePage" to="/new">New Vehicle</Link>

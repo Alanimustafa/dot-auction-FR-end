@@ -13,7 +13,7 @@ const DeleteVehicle = () => {
     const [deleted, setDeleted] = useState(false); // Vehicle remove state.
 
     useEffect(() => {
-        axios.get(`https://dot-auction-bk-end.onrender.com/details/${id}`)
+        axios.get(`http://localhost:3000/details/${id}`)
             .then(response => {
                 setVehicle(response.data);
                 setLoading(false);
@@ -26,7 +26,7 @@ const DeleteVehicle = () => {
     }, [id]);
 
     const deleteSelectedVehicle = () => {
-        axios.delete(`https://dot-auction-bk-end.onrender.com/delete/${id}`)
+        axios.delete(`http://localhost:3000/delete/${id}`)
             .then(() => {
                 setDeleted(true);
             })
@@ -42,7 +42,7 @@ const DeleteVehicle = () => {
 
     return (
         <div className="DeleteVehiclePageMainContainer">
-            <h1 className="logoHeader">BACK LOT Home Page</h1>
+            <h1 className="logoHeader">BACK LOT</h1>
             <h3 className="logoHeader">Vehicles Inventory Management System</h3>
             <h4 className="DeleteVehicleHeader">REMOVE VEHICLE / {vehicle.year} - {vehicle.make} - {vehicle.model}</h4>
 
