@@ -1,9 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
- //import './index.css'
-// import App from './App.jsx'
-
+ 
 // Routes Modules Imports
 import Home from './Pages/Home.jsx'
 import Compacts from './Pages/Compacts.jsx'

@@ -109,8 +109,6 @@ const VehicleUpdator = () => {
                         <option value="VOLKSWAGON">Volkswagon</option>
                     </select>
 
-                    {/* <input type="text" name="make" value={vehicle.make  || ''} onChange={handleChange}/> */}
-
                     <label className="NewVehicleLabels">Model :</label>
                     <input type="text" name="model" value={vehicle.model  || ''} onChange={handleChange}/>
 
@@ -128,10 +126,6 @@ const VehicleUpdator = () => {
                         <option value="SILVER">Silver</option>
                         <option value="MAROON">Maroon</option>
                     </select>
-
-
-
-                    {/* <input type="text" name="color" value={vehicle.color  || ''} onChange={handleChange}/> */}
 
                     <label className="NewVehicleLabels">Price :</label>
                     <input type="text" name="price" value={vehicle.price  || ''} onChange={handleChange}/>

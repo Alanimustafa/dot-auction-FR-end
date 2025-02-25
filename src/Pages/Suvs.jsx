@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Suvs () {
     const [vehicles, setVehicles] = useState([]);
 
-    console.log("The Sedan Vehicles :", vehicles);
+    // console.log("The Sedan Vehicles :", vehicles); // for test only
     useEffect(()=>{
         axios.get("http://localhost:3000/")
         .then( response => {

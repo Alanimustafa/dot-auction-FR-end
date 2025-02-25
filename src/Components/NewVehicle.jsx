@@ -4,6 +4,7 @@ import "./Styles/NewVehicle.css"
 import Nav from "./Nav";
 import { useNavigate } from "react-router-dom";
 
+// New Vehicle function
 const AddVehicleForm = () => {
   const nav = useNavigate();
   const [formData, setFormData] = useState({
@@ -27,6 +28,7 @@ const AddVehicleForm = () => {
     buy_date: ""
   });
 
+  // Handle the changes in the form
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -35,6 +37,7 @@ const AddVehicleForm = () => {
     });
   };
 
+  // submision of the imput data
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -137,10 +140,6 @@ const AddVehicleForm = () => {
                         <option value="MAROON">Maroon</option>
                     </select>
 
-
-                    {/* <label className="NewVehicleLabels">Color :</label>
-                    <input type="text" name="color" value={formData.color} onChange={handleChange} placeholder="Color" /> */}
-
                     <label className="NewVehicleLabels">Price :</label>
                     <input type="text" name="price" value={formData.price} onChange={handleChange} placeholder="Price" required />
 
@@ -202,12 +201,7 @@ const AddVehicleForm = () => {
 
         </div>
     </div>
-
-
-
-    
     </>
-
   );
 };
 

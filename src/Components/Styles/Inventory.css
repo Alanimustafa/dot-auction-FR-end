@@ -11,7 +11,6 @@ body {
 
 .PageMainContainer {
     width: 100%;
-    /* border: red solid 3px; */
     justify-self: center;
 }
 
@@ -74,6 +73,3 @@ body {
     border: wheat solid 1px;
     margin: 5px;
 }
-
-
-

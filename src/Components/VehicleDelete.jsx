@@ -6,13 +6,11 @@ import "./Styles/VehicleDelete.css";
 
 // Delete Vehicle Function
 const DeleteVehicle = () => {
-    const { id } = useParams();
-    const navigate = useNavigate();
-    
-    const [vehicle, setVehicle] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-    const [deleted, setDeleted] = useState(false);
+    const { id } = useParams(); // Using Params to idetify the selected vehicle by its id.
+    const [vehicle, setVehicle] = useState(null); // Vehicle State setter.
+    const [loading, setLoading] = useState(true); // Page Loading setter.
+    const [error, setError] = useState(null); // Error Loading State setter.
+    const [deleted, setDeleted] = useState(false); // Vehicle remove state.
 
     useEffect(() => {
         axios.get(`http://localhost:3000/details/${id}`)
@@ -31,7 +29,6 @@ const DeleteVehicle = () => {
         axios.delete(`http://localhost:3000/delete/${id}`)
             .then(() => {
                 setDeleted(true);
-               // setTimeout(() => navigate("/"), 2000); // Redirect after 2 seconds
             })
             .catch(error => {
                 console.error("Error deleting the vehicle:", error);

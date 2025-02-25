@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 // import Vehicle Card Style
 import "./Styles/VehicleCard.css"
 
-
+// The vehicle card function
 const VehicleCard = ({vehicle}) => {
 
-    console.log(`The Vehicle Details received from Vehicle Items page ${vehicle._id}`); // Only For Test.
+   // console.log(`The Vehicle Details received from Vehicle Items page ${vehicle._id}`); // Only For Test.
 
     return (
         <>

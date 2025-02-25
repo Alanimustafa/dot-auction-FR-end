@@ -6,6 +6,7 @@ import "./Styles/Pages.css";
 import Nav from "../Components/Nav";
 import VehicleList from "../Components/VehicleList.jsx";
 
+
 function Home() {
     const [vehicles, setVehicles] = useState([]);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -44,16 +45,14 @@ function Home() {
                 <div className="HomaPageMainImageRightContainer">
                     {vehicles.length > 0 && ( 
                         <>
-                        <h4 className="imageLoopVehiclesInfo">{vehicles[currentImageIndex].year} - {vehicles[currentImageIndex].make} {vehicles[currentImageIndex].model}</h4>
-                        <img 
-                            src={vehicles[currentImageIndex].image_url} 
-                            alt="Vehicle" 
-                            className="ImageLoopContainer"
-                        />
-                        
+                            <h4 className="imageLoopVehiclesInfo">{vehicles[currentImageIndex].year} - {vehicles[currentImageIndex].make} {vehicles[currentImageIndex].model}</h4>
+                            <img 
+                                src={vehicles[currentImageIndex].image_url} 
+                                alt="Vehicle" 
+                                className="ImageLoopContainer"
+                            />
                         </>
                     )}
-                    
                 </div>
             </div>
 

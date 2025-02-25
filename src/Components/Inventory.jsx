@@ -5,12 +5,11 @@ import { Link } from "react-router-dom";
 
 // Importing Components
 import Nav from "../Components/Nav";
-import VehicleList from "../Components/VehicleList.jsx";
 
 function Inventory () {
     const [vehicles, setVehicles] = useState([])
 
-    // console.log(vehicles)
+    // console.log(vehicles) // For test only.
     useEffect(()=>{
         axios.get("http://localhost:3000/")
         .then(response => {setVehicles(response.data)

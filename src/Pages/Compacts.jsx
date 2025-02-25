@@ -4,6 +4,7 @@ import "./Styles/Pages.css";
 import Nav from "../Components/Nav";
 import { Link } from "react-router-dom";
 
+// Conpact Vehicles function
 function Compacts () {
     const [vehicles, setVehicles] = useState([]);
 
@@ -52,13 +53,8 @@ function Compacts () {
                             
                         </div>
                         ))}
-
-                        
                     </div>
-
-              
             </div>
-        
         </>
     )
 }
