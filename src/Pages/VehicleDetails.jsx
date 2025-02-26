@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./Styles/VehicleDetails.css"
+import Nav from "../Components/Nav";
 
 const VehicleDetails = () => {
     // Get the vehicle ID from URL params
@@ -35,39 +36,35 @@ const VehicleDetails = () => {
 
     return (
         <>
-        <h1 className="logoHeader">BACK LOT</h1>
-        <h3 className="logoHeader">Vehicles inventory management system</h3>
-        <div className="LinktoHomePageContainer">
-            <Link className="LinkToHomePage" to="/">Home</Link>
+
+        <div className="vehicleDetailsPage">
+            <Nav></Nav>
+            <h3 className="VehicleDetailsPageTitle">Vehicle Details</h3>
+            <div className="VehicleDetailsPageMainContainer">
+                <div className="VehicleDetailsPageVehicleMakeModel">
+                    <h3 className="VehicleDetailsPageHeader">{vehicle.year} - {vehicle.make} | {vehicle.model}</h3>
+                    <p className="VehicleDetailsPageHeader">VIN: {vehicle._id}</p>
+                    <p className="VehicleDetailsPageHeader">Year {vehicle.year}</p>
+                    <p className="VehicleDetailsPageHeader">Make {vehicle.make}</p>
+                    <p className="VehicleDetailsPageHeader">Trim: {vehicle.trim}</p>
+                    <p className="VehicleDetailsPageHeader">Color: {vehicle.color}</p>
+                    <p className="VehicleDetailsPageHeader">Fule type: {vehicle.fuel_type}</p>
+                    <p className="VehicleDetailsPageHeader">Milage: {vehicle.mileage} miles</p>
+                    <p className="VehicleDetailsPageHeader">Buyer: {vehicle.buyerName}</p>
+                    <p className="VehicleDetailsPageHeader">Seller: {vehicle.sellerName}</p>
+                </div>
+                <div className="VehicleDetailsRightContainer">
+                    <div className="VehicleDetailsPageVehicleImageContainer">
+                        <img className="VehicleImage" src={vehicle.image_url} alt="" />
+                    </div>
+                </div>
+            </div>        
+            <div className="VehicleDetailsBTNs">
+                <Link className="UpdateLink" to={`/update/${id}`}> Update this vehicle </Link>
+                <Link className="DeleteLink" to={`/delete/${id}`}> Delete this vehicle </Link>
+            </div>
         </div>
-        <div className="VehicleDetailsPageMainContainer">
-            <div className="VehicleDetailsPageVehicleMakeModel">
-                <h3 className="VehicleDetailsPageHeader">{vehicle.year} - {vehicle.make} | {vehicle.model}</h3>
-                <p className="VehicleDetailsPageHeader">VIN: {vehicle._id}</p>
-                <p className="VehicleDetailsPageHeader">Year {vehicle.year}</p>
-                <p className="VehicleDetailsPageHeader">Make {vehicle.make}</p>
-                <p className="VehicleDetailsPageHeader">Trim: {vehicle.trim}</p>
-                <p className="VehicleDetailsPageHeader">Color: {vehicle.color}</p>
-                <p className="VehicleDetailsPageHeader">Fule type: {vehicle.fuel_type}</p>
-                <p className="VehicleDetailsPageHeader">Milage: {vehicle.mileage} miles</p>
-                <p className="VehicleDetailsPageHeader">Buyer: {vehicle.buyerName}</p>
-                <p className="VehicleDetailsPageHeader">Seller: {vehicle.sellerName}</p>
-                
-            </div>
-            <div className="VehicleDetailsRightContainer">
-                <div className="VehicleDetailsPageVehicleImageContainer">
-                    <img className="VehicleImage" src={vehicle.image_url} alt="" />
-                </div>
-                <div className="VehicleDetailsBTNs">
-                    <Link className="UpdateLink" to={`/update/${id}`}> Update this vehicle </Link>
-                    <Link className="DeleteLink" to={`/delete/${id}`}> Delete this vehicle </Link>
-                </div>
 
-            </div>
-
-            
-
-        </div>        
         </>
 
     );

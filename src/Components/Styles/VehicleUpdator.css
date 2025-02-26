@@ -1,3 +1,8 @@
+@media (max-width: 40em) {
+
+}
+
+
 .VehicleUpdatorPageMainContainer {
     border: wheat solid 1px;
     padding-bottom: 3vh;
@@ -27,6 +32,8 @@
     color: wheat;
     border: wheat solid 1px;
     padding: 1vh;
+    text-align: center;
+    width: 10vw;
 }
 
 .CancelLink:hover {
