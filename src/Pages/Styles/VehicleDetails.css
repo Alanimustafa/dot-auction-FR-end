@@ -46,14 +46,14 @@
     width: 90%;
     margin: 1vh;
     border: gray solid 3px;
-    padding-left: 1vw
+    padding-left: 1vw;
+    overflow: hidden;
 }
 
 .VehicleDetailsRightContainer {
     justify-items: center;
     width: 60%;
     height: 60vh
-
 }
 .VehicleDetailsPageVehicleImageContainer {
     background-color: white;
@@ -84,6 +84,7 @@
     align-content: center;
     justify-content: space-between;
     display: flex;
+    margin-bottom: 5vh;
 }
 
 .UpdateLink,
@@ -106,6 +107,7 @@
     border: black solid 1px;
     cursor: pointer;
     box-shadow: wheat 0px 0px 10px;
+    
 }
     
 

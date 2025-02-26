@@ -7,13 +7,11 @@ function Nav () {
         <div className="mainpageHeaderBackBar">
                 <h1 className="logoHeader">BACK LOT</h1>
                 <h3 className="logoHeader">Vehicles Inventory Management System</h3>
-            </div>
+        </div>
         <div className="NavigationBar">
             
 
             <nav className="NavMainContainer">
-
-            
 
                 {/* HOME Page Navegation Link */}
                 <Link className="NavLink" to="/">
@@ -47,7 +45,7 @@ function Nav () {
             </nav>
 
             <nav className="InventoryManager">
-                <Link className="NavLink" to="/inventory">
+                <Link className="InventoryLink" to="/inventory">
                     <p>Inventory Manager</p>
                 </Link>
             </nav>

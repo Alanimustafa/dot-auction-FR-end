@@ -1,10 +1,30 @@
+
+@media (max-width: 40em) {
+    .HomaPageMainImageRightContainer
+    
+     {
+        display: none;
+    }
+}
+
+@media (max-width: 40em) {
+ 
+    .HomaPageMainImageLeftContainer,
+    .backLotLeftHeaderH1,
+    .backLotLeftHeaderH3
+     {
+        min-width: 93vw;
+
+    }
+}
+
 body {
-    background-color: black;
     width: 98%;
     box-shadow: gray 0px 0px 10px;
     background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20230722/pngtree-minimal-geometric-3d-background-with-golden-accent-for-luxurious-product-display-image_3784615.jpg");
-    background-size: cover;
-    background-position: center;
+    background-position:top ;
+    
+    
     justify-content: center;
 
     display: flex;
@@ -12,7 +32,7 @@ body {
     }
 
 .PageMainContainer {
-    margin-top: 0vh;
+    margin-top: 3vh;
     width: 100%;
     /* border: red solid 3px; */
     justify-self: center;
@@ -29,26 +49,33 @@ body {
     border: wheat solid 1px;
     height: 80vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-image: url('https://t4.ftcdn.net/jpg/06/92/61/21/360_F_692612180_XAUFLe7Mw3Vvef8H33QudG16RWh9H0d1.jpg');
     background-size: cover;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .HomaPageMainImageRightContainer {
     width: 50%;
     align-content: center;
     margin-top:25vh;
+    flex-wrap: wrap;
 }
 
 .HomaPageMainImageLeftContainer {
-    width: 45%;
+    width: 50%;
+    height: auto;
     color: orange;
     text-align: center;
-    font-family: impact;
-    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
     margin-top: 25vh;
     align-self: center;
     justify-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 .backLotLeftHeaderH1 {
@@ -56,13 +83,21 @@ body {
     margin: 0px;
     background-color: orange;
     border: black solid 2px;
+    flex-wrap: wrap;
+    height: auto;
+    width: 60%;
+    font-size:larger;
 }
 
 .backLotLeftHeaderH3 {
     color: orange;
     margin: 0px;
+    font-size:large;
     background-color: black;
     border: orange solid 2px;
+    flex-wrap: wrap;
+    height: auto;
+    width: 60%;
 }
 
 .ImageLoopContainer {
@@ -73,6 +108,7 @@ body {
     justify-self:last baseline;
     margin-top: 10vh;
     margin-left: 8vw;
+    flex-wrap: wrap;
 }
 
 .imageLoopVehiclesInfo {
@@ -83,11 +119,12 @@ body {
     border: orange solid 2px;
     border-radius: 10px;
     box-shadow: wheat 0px 0px 10px;
-    
+    flex-wrap: wrap;
 }
 
 .HomePageAllVehicleHeaderContainer {
     margin-top: 3vh;
+    flex-wrap: wrap;
 }
 
 .HomePageListHeader {
@@ -102,7 +139,8 @@ body {
     border: wheat solid 2px;
     width: 95vw;
     display: block;
-    
+    flex-wrap: wrap;
+    margin-top: 3vh
 }
 
 .VehicleTypeCategoryHeader {
@@ -118,4 +156,5 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 7vh;
+    flex-wrap: wrap;
 }

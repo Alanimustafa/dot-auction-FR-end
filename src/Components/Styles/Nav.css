@@ -1,4 +1,31 @@
 
+@media (max-width: 30em) {
+    .NavigationBar {
+        display: block;
+        flex-direction: column;
+    }
+
+    .InventoryLink {
+        display: none;
+    }
+
+    .NavLink
+     {
+      height: auto;
+      width: auto;
+      background: #333;
+      padding: 0;
+      position: relative;
+      font-size:xx-small;
+    }
+    .NavMainContainer {
+        justify-self: center;
+        align-self: center;
+        margin-top:5px
+    }
+}
+
+
 .mainpageHeaderBackBar {
     border: wheat solid 1px;
     padding-left: 1vw;
@@ -13,7 +40,7 @@
 .NavigationBar {
     background-color: black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 98%;
     height: 7vh;
     margin-top: 10vh;
@@ -24,8 +51,10 @@
 
 .NavMainContainer {
     display: flex;
-    width: 70%;
-    justify-content: space-around;
+    width: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 1vw;
 }
 
 .InventoryManager {
@@ -34,7 +63,8 @@
     justify-content: space-around;
 }
 
-.NavLink {
+.NavLink,
+.InventoryLink {
     text-decoration: none;
     color: wheat;
     background-color: black;
@@ -43,6 +73,8 @@
     padding-left: 2vw;
     height: 5vh;
     align-content: center;
+    overflow: hidden;
+    margin-left: 1vw;
 }
 
 .NavLink:hover {
