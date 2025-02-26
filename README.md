@@ -15,6 +15,9 @@ FrontEnd: https://github.com/Alanimustafa/dot-auction-FR-end
 Wireframe Link: 
 https://xd.adobe.com/view/3a655d4f-7202-4195-b016-4ceca2c647cf-6f36/
 
+Deployment Link:
+https://backlot-inventory-management-system.onrender.com/
+
 
 Dependencies:
 1. Express.
