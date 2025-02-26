@@ -13,7 +13,7 @@ const DeleteVehicle = () => {
     const [deleted, setDeleted] = useState(false); // Vehicle remove state.
 
     useEffect(() => {
-        axios.get(`http://localhost:3000/details/${id}`)
+        axios.get(`https://dot-auction-bk-end.onrender.com/details/${id}`)
             .then(response => {
                 setVehicle(response.data);
                 setLoading(false);
@@ -26,7 +26,7 @@ const DeleteVehicle = () => {
     }, [id]);
 
     const deleteSelectedVehicle = () => {
-        axios.delete(`http://localhost:3000/delete/${id}`)
+        axios.delete(`https://dot-auction-bk-end.onrender.com/delete/${id}`)
             .then(() => {
                 setDeleted(true);
             })

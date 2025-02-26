@@ -17,7 +17,7 @@ const VehicleDetails = () => {
     useEffect(() => {
         if (!id) return; // Prevent request if id is undefined
 
-        axios.get(`http://localhost:3000/details/${id}`)
+        axios.get(`https://dot-auction-bk-end.onrender.com/details/${id}`)
             .then((response) => {
                 setVehicle(response.data);
                 setLoading(false);

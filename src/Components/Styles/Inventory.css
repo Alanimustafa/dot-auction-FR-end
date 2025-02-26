@@ -49,6 +49,18 @@ body {
 
 .LinkToHomePage {
     margin: 5vw;
+    text-decoration: none;
+    color: wheat;
+    background-color: black;
+    border: wheat solid 1px;
+    padding: 0.5vw;
+}
+
+.LinkToHomePage:hover {
+    color: black;
+    border: black solid 1px;
+    background-color: wheat;
+    box-shadow: wheat 0px 0px 10px;;
 }
 .InventoryVehiclesList {
     color: wheat;
