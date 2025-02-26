@@ -20,7 +20,7 @@ const VehicleUpdator = () => {
     useEffect(()=>{
         if (!id) return;
 
-        axios.get(`https://dot-auction-bk-end.onrender.com/details/${id}`)
+        axios.get(`http://localhost:3000/details/${id}`)
         .then ( response => {
             setVehicle(response.data); // The Vehicle data setter
             setLoading(false);  // The loading Setter.
@@ -35,7 +35,7 @@ const VehicleUpdator = () => {
     // Submission function for the changes
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.put(`https://dot-auction-bk-end.onrender.com/update/${id}`, vehicle)
+        axios.put(`http://localhost:3000/update/${id}`, vehicle)
             .then(() => {
                 alert("Vehicle updated successfully");
                 navigate(`/details/${id}`); // Going back to the Vehicle details pagee.

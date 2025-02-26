@@ -3,7 +3,7 @@
     border:gray solid 3px;
     border-radius: 10px;
     width: 10vw;
-    height: auto;
+    height: 60vh;
     padding-bottom: 1em;
     padding-top: 1em;
     margin: 1em;
@@ -48,19 +48,22 @@
 }
 
 .VehicleCardInformation {
-    border: orange solid 1px;
+    border: gray solid 1px;
+    border-radius: 10px;;
     margin: 0px;
     width: 90%;
     height: 19%;
     overflow: hidden;
     justify-self: center;
+    box-shadow: black 0px 0px 5px;;
 }
 
 .VehicleCardInformationPrice {
-    color: black;
+    color: darkgreen;
     margin:0px;
     justify-self: right;
-    margin-top: 3vh
+    margin-top: 2vh;
+    margin-right: 1vw;
 }
 
 .VehicleCardInformationMileage,
@@ -68,35 +71,47 @@
     color: black;
     justify-self: left;
     margin: 0px;
-    font-size: 18px;;
+    font-size: 18px;
+    margin-left: 0.5vw;
+    margin-top:0.5vh
 }
 
 .VehicldeDetails {
-    border: wheat double 5px;
-    border-radius: 0px 0px 15px 15px ;
-    background-color: black;
-    width: 98%;
+    display: flex;
+    flex-direction: column;
+    width: 94%;
     justify-self: center;
-    margin-top:1vh;
+    margin-top:2vh;
+    margin-bottom: 20px;
     padding-top: 10px;
-    padding-bottom: 10px;;
+    padding-bottom: 2vh;
+    padding: 0px;
 }
 
 
 .LinkToVehicleDetails {
     text-decoration: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 .VehicleDetailsHeader {
     color: wheat;
+    background-color: black;
     justify-self: center;
     margin: 0px;
-    
-    
+    border: wheat double 5px;
+    border-radius: 0px 0px 10px 10px ;
+    width: 100%;
+    height: 4vh;
+    text-align:center;
+    padding-top:1vh;
 }
 
-.VehicleDetailsHeader:hover,
-.VehicldeDetails:hover {
-    color:rgb(252, 211, 135);
+.VehicleDetailsHeader:hover {
+    color:black;
+    background-color: wheat;
+    border: black double 5px;
+    box-shadow: wheat 0px 0px 10px;;
     cursor: pointer;
 }

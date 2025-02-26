@@ -42,7 +42,7 @@ const AddVehicleForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://dot-auction-bk-end.onrender.com/newvehicle/", {
+      const response = await axios.post("http://localhost:3000/newvehicle/", {
         ...formData,
         year: Number(formData.year),
         isAWD: formData.isAWD === "true",
