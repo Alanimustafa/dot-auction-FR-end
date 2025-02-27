@@ -21,7 +21,6 @@ Back Lot is an inventory management system designed to help users manage a vehic
 * MongoDB
 * Express
 * React
-* Nodejs
 * JavaScript
 * CSS3
 
