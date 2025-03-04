@@ -52,7 +52,7 @@ const AddVehicleForm = () => {
       });
       console.log("Vehicle added:", response.data);
       alert("Vehicle successfully added!");
-      nav('/');
+      nav(`/${formData.type}s`);
     } catch (error) {
       console.error("Error adding vehicle:", error);
       alert("Failed to add vehicle");
