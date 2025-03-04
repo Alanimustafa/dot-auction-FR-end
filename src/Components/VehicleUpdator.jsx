@@ -86,6 +86,7 @@ const VehicleUpdator = () => {
 
                     <select name="make" type="text" value={vehicle.make || ''} onChange={handleChange}>
                         <option value="ACURA">Acura</option>
+                        <option value="AUDI">Audi</option>
                         <option value="BMW">BMW</option>
                         <option value="CADILAC">Cadilac</option>
                         <option value="CHEVROLET">Chevrolet</option>
@@ -121,7 +122,7 @@ const VehicleUpdator = () => {
                         <option value="WHITE">White</option>
                         <option value="GRAY">Gray</option>
                         <option value="BLUE">Blue</option>
-                        <option value="SILVER">Silver</option>
+                        <option value="RED">Red</option>
                         <option value="GREEN">Green</option>
                         <option value="SILVER">Silver</option>
                         <option value="MAROON">Maroon</option>
